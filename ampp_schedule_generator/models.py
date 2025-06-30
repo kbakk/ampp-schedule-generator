@@ -1,13 +1,8 @@
 from __future__ import annotations
 
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Union
 
 from pydantic import BaseModel
-
-
-class Payload(BaseModel):
-    type: str
-    timeDetails: TimeDetailsNotional
 
 
 class TimeDetailsSimple(BaseModel):
@@ -36,24 +31,9 @@ class TimeDetailsWithOffset(BaseModel):
     inPoint: Optional[str] = None
 
 
-class TimeDetailsOffsetRequired(BaseModel):
-    offset: str
-    timeMode: str
-    duration: Optional[str] = None
-
-
 class TransitionDetails(BaseModel):
     type: str
-
-
-class InTransitionDetails(BaseModel):
-    type: str
-    duration: str
-
-
-class OutTransitionDetails(BaseModel):
-    type: str
-    duration: str
+    duration: Optional[str] = None
 
 
 class LiveDetails(BaseModel):
@@ -76,86 +56,52 @@ class AggregatedDetails(BaseModel):
     outPoint: str
 
 
-class Level1Payload(BaseModel):
+# Flexible payload that can handle any payload type with any combination of fields
+class FlexiblePayload(BaseModel):
     type: str
+    # Container fields
+    timeDetails: Optional[
+        Union[TimeDetailsNotional, TimeDetailsSimple, TimeDetailsWithOffset]
+    ] = None
+    # Live/Media fields
     productcode: Optional[str] = None
     materialId: Optional[str] = None
-    timeDetails: Optional[TimeDetailsSimple] = None
     materialType: Optional[str] = None
     sourceType: Optional[str] = None
     transitionDetails: Optional[TransitionDetails] = None
     liveDetails: Optional[LiveDetails] = None
     recording: Optional[Recording] = None
     notes: Optional[str] = None
-
-
-class Level2Payload(BaseModel):
-    type: str
-    timeDetails: TimeDetailsWithOffset
-    materialId: str
+    # Layer fields
     layer: Optional[int] = None
-    inTransitionDetails: Optional[InTransitionDetails] = None
-    outTransitionDetails: Optional[OutTransitionDetails] = None
-    productcode: Optional[str] = None
-    materialType: Optional[str] = None
-    sourceType: Optional[str] = None
-    transitionDetails: Optional[TransitionDetails] = None
-    liveDetails: Optional[LiveDetails] = None
+    inTransitionDetails: Optional[TransitionDetails] = None
+    outTransitionDetails: Optional[TransitionDetails] = None
     mammediaid: Optional[str] = None
     carrierid: Optional[str] = None
     aggregatedDetails: Optional[AggregatedDetails] = None
+    # Offset fields
+    offset: Optional[str] = None
+    endTimeMode: Optional[str] = None
+    fluidDuration: Optional[bool] = None
+    inPoint: Optional[str] = None
+    startTime: Optional[str] = None
+    duration: Optional[str] = None
+    externalTriggerWindow: Optional[Dict[str, Any]] = None
+    notionalStartTime: Optional[str] = None
 
 
-class Level3Payload(BaseModel):
-    type: str
-    timeDetails: TimeDetailsOffsetRequired
-    materialId: str
-    layer: int
-    inTransitionDetails: InTransitionDetails
-    outTransitionDetails: OutTransitionDetails
-
-
-class ItemLevel3(BaseModel):
+# Single flexible item that can contain any other items
+class FlexibleItem(BaseModel):
     id: str
     name: str
-    payload: Level3Payload
+    payload: FlexiblePayload
     alternatives: List
     recorderStates: List
     version: int
-    items: List
-
-
-class ItemLevel2(BaseModel):
-    id: str
-    name: str
-    payload: Level2Payload
-    alternatives: List
-    recorderStates: List
-    version: int
-    items: List[ItemLevel3]
-
-
-class ItemLevel1(BaseModel):
-    id: str
-    name: str
-    payload: Level1Payload
-    alternatives: List
-    recorderStates: List
-    version: int
-    items: List[ItemLevel2]
-
-
-class GenericContainer(BaseModel):
-    id: str
-    name: str
-    payload: Payload
-    alternatives: List
-    recorderStates: List
-    version: int
-    items: List[ItemLevel1]
+    items: List["FlexibleItem"]
 
 
 class Schedule(BaseModel):
     id: str
     name: str
-    items: List[GenericContainer]
+    items: List[FlexibleItem]
