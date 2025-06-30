@@ -26,8 +26,34 @@ class TimeDetailsNotional(BaseModel):
     startTime: Optional[str] = None
 
 
+class TimeDetailsWithOffset(BaseModel):
+    offset: Optional[str] = None
+    timeMode: str
+    startTime: Optional[str] = None
+    duration: Optional[str] = None
+    endTimeMode: Optional[str] = None
+    fluidDuration: Optional[bool] = None
+    inPoint: Optional[str] = None
+
+
+class TimeDetailsOffsetRequired(BaseModel):
+    offset: str
+    timeMode: str
+    duration: Optional[str] = None
+
+
 class TransitionDetails(BaseModel):
     type: str
+
+
+class InTransitionDetails(BaseModel):
+    type: str
+    duration: str
+
+
+class OutTransitionDetails(BaseModel):
+    type: str
+    duration: str
 
 
 class LiveDetails(BaseModel):
@@ -44,7 +70,13 @@ class Recording(BaseModel):
     recordDetails: List[RecordDetail]
 
 
-class Payload1(BaseModel):
+class AggregatedDetails(BaseModel):
+    duration: str
+    inPoint: str
+    outPoint: str
+
+
+class Level1Payload(BaseModel):
     type: str
     productcode: Optional[str] = None
     materialId: Optional[str] = None
@@ -57,44 +89,9 @@ class Payload1(BaseModel):
     notes: Optional[str] = None
 
 
-class TimeDetails2(BaseModel):
-    offset: Optional[str] = None
-    timeMode: str
-    startTime: Optional[str] = None
-    duration: Optional[str] = None
-    endTimeMode: Optional[str] = None
-    fluidDuration: Optional[bool] = None
-    inPoint: Optional[str] = None
-
-
-class InTransitionDetails(BaseModel):
+class Level2Payload(BaseModel):
     type: str
-    duration: str
-
-
-class OutTransitionDetails(BaseModel):
-    type: str
-    duration: str
-
-
-class TransitionDetails1(BaseModel):
-    type: str
-
-
-class LiveDetails1(BaseModel):
-    mediaStatus: str
-    mediaStatusReason: str
-
-
-class AggregatedDetails(BaseModel):
-    duration: str
-    inPoint: str
-    outPoint: str
-
-
-class Payload2(BaseModel):
-    type: str
-    timeDetails: TimeDetails2
+    timeDetails: TimeDetailsWithOffset
     materialId: str
     layer: Optional[int] = None
     inTransitionDetails: Optional[InTransitionDetails] = None
@@ -102,42 +99,26 @@ class Payload2(BaseModel):
     productcode: Optional[str] = None
     materialType: Optional[str] = None
     sourceType: Optional[str] = None
-    transitionDetails: Optional[TransitionDetails1] = None
-    liveDetails: Optional[LiveDetails1] = None
+    transitionDetails: Optional[TransitionDetails] = None
+    liveDetails: Optional[LiveDetails] = None
     mammediaid: Optional[str] = None
     carrierid: Optional[str] = None
     aggregatedDetails: Optional[AggregatedDetails] = None
 
 
-class TimeDetails3(BaseModel):
-    offset: str
-    timeMode: str
-    duration: Optional[str] = None
-
-
-class InTransitionDetails1(BaseModel):
+class Level3Payload(BaseModel):
     type: str
-    duration: str
-
-
-class OutTransitionDetails1(BaseModel):
-    type: str
-    duration: str
-
-
-class Payload3(BaseModel):
-    type: str
-    timeDetails: TimeDetails3
+    timeDetails: TimeDetailsOffsetRequired
     materialId: str
     layer: int
-    inTransitionDetails: InTransitionDetails1
-    outTransitionDetails: OutTransitionDetails1
+    inTransitionDetails: InTransitionDetails
+    outTransitionDetails: OutTransitionDetails
 
 
 class ItemLevel3(BaseModel):
     id: str
     name: str
-    payload: Payload3
+    payload: Level3Payload
     alternatives: List
     recorderStates: List
     version: int
@@ -147,7 +128,7 @@ class ItemLevel3(BaseModel):
 class ItemLevel2(BaseModel):
     id: str
     name: str
-    payload: Payload2
+    payload: Level2Payload
     alternatives: List
     recorderStates: List
     version: int
@@ -157,14 +138,14 @@ class ItemLevel2(BaseModel):
 class ItemLevel1(BaseModel):
     id: str
     name: str
-    payload: Payload1
+    payload: Level1Payload
     alternatives: List
     recorderStates: List
     version: int
     items: List[ItemLevel2]
 
 
-class Item(BaseModel):
+class GenericContainer(BaseModel):
     id: str
     name: str
     payload: Payload
@@ -174,7 +155,7 @@ class Item(BaseModel):
     items: List[ItemLevel1]
 
 
-class Model(BaseModel):
+class Schedule(BaseModel):
     id: str
     name: str
-    items: List[Item]
+    items: List[GenericContainer]
