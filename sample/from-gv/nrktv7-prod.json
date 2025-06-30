@@ -1,0 +1,858 @@
+{
+    "id": "435230ec-d63e-4b6a-806f-7fe9a8f19958",
+    "name": "original (14)",
+    "items": [
+        {
+            "id": "88272b89-dbe9-447b-8da9-4b5f05bcfa1a",
+            "name": "Sendedøgn 26-06-2025",
+            "payload": {
+                "type": "Container",
+                "timeDetails": {
+                    "duration": "24:00:00.0000000",
+                    "timeMode": "Auto",
+                    "externalTriggerWindow": {},
+                    "notionalStartTime": "2025-06-30T08:25:36.0000000Z"
+                }
+            },
+            "alternatives": [],
+            "recorderStates": [],
+            "version": 8,
+            "items": [
+                {
+                    "id": "67285241-b034-4588-923c-cf7cd145be1d",
+                    "name": "Nora-plakat TV7 | Testserie AMPP: Fotball",
+                    "payload": {
+                        "type": "Live",
+                        "productcode": "ChyronQ7AA",
+                        "materialId": "TV7-PLAKAT",
+                        "timeDetails": {
+                            "duration": "00:01:00.0000000",
+                            "timeMode": "Auto",
+                            "endTimeMode": "Manual"
+                        },
+                        "materialType": "Live",
+                        "sourceType": "Fabric",
+                        "transitionDetails": {
+                            "type": "Cut"
+                        },
+                        "liveDetails": {
+                            "mediaStatus": "Invalid",
+                            "mediaStatusReason": "WaitingToResolve"
+                        }
+                    },
+                    "alternatives": [],
+                    "recorderStates": [],
+                    "version": 1,
+                    "items": [
+                        {
+                            "id": "f8e2e4bd-2146-4a06-84e0-7f48b3b8cd07",
+                            "name": "NRKTV",
+                            "payload": {
+                                "type": "Logo",
+                                "timeDetails": {
+                                    "offset": "00:00:00.0000000",
+                                    "timeMode": "ParentDuration"
+                                },
+                                "materialId": "LG8ONE",
+                                "layer": 6,
+                                "inTransitionDetails": {
+                                    "type": "Fade",
+                                    "duration": "00:00:00.2600000"
+                                },
+                                "outTransitionDetails": {
+                                    "type": "Fade",
+                                    "duration": "00:00:00.2600000"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 1,
+                            "items": []
+                        }
+                    ]
+                },
+                {
+                    "id": "0cd3cfe1-4a12-d5e9-2227-1c05650e7efd",
+                    "name": "MANUAL INSERT",
+                    "payload": {
+                        "type": "Show",
+                        "timeDetails": {
+                            "duration": "00:01:00.0000000",
+                            "timeMode": "Auto",
+                            "externalTriggerWindow": {}
+                        },
+                        "recording": {
+                            "recordDetails": [
+                                {
+                                    "sourceType": "CLEANFEED",
+                                    "name": "zzz-0626-tv7-4-2"
+                                }
+                            ]
+                        }
+                    },
+                    "alternatives": [],
+                    "recorderStates": [],
+                    "version": 2,
+                    "items": []
+                },
+                {
+                    "id": "55111dbe-69b3-43c8-adae-6b5d818abf53",
+                    "name": "Nora-plakat TV7 | Testserie AMPP: Fotball",
+                    "payload": {
+                        "type": "Live",
+                        "productcode": "ChyronQ7AA",
+                        "materialId": "TV7-PLAKAT",
+                        "timeDetails": {
+                            "duration": "00:01:00.0000000",
+                            "timeMode": "Auto",
+                            "endTimeMode": "Manual",
+                            "externalTriggerWindow": {}
+                        },
+                        "materialType": "Live",
+                        "sourceType": "Fabric",
+                        "transitionDetails": {
+                            "type": "Cut"
+                        },
+                        "liveDetails": {
+                            "mediaStatus": "Invalid",
+                            "mediaStatusReason": "WaitingToResolve"
+                        },
+                        "recording": {
+                            "recordDetails": []
+                        }
+                    },
+                    "alternatives": [],
+                    "recorderStates": [],
+                    "version": 5,
+                    "items": [
+                        {
+                            "id": "f856b41a-8d6b-44fe-aed7-ea07a0c7c643",
+                            "name": "NRKTV",
+                            "payload": {
+                                "type": "Logo",
+                                "timeDetails": {
+                                    "offset": "00:00:00.0000000",
+                                    "timeMode": "ParentDuration"
+                                },
+                                "materialId": "LG8ONE",
+                                "layer": 6,
+                                "inTransitionDetails": {
+                                    "type": "Fade",
+                                    "duration": "00:00:00.2600000"
+                                },
+                                "outTransitionDetails": {
+                                    "type": "Fade",
+                                    "duration": "00:00:00.2600000"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 1,
+                            "items": []
+                        }
+                    ]
+                },
+                {
+                    "id": "show-20250626-mspo00002724-nrktv7",
+                    "name": "Testserie AMPP: Fotball",
+                    "payload": {
+                        "type": "Show",
+                        "recording": {
+                            "recordDetails": [
+                                {
+                                    "name": "zzz-0626-tv7-4-3",
+                                    "sourceType": "Clean feed"
+                                }
+                            ]
+                        },
+                        "productcode": "MSPO000027/24"
+                    },
+                    "alternatives": [],
+                    "recorderStates": [],
+                    "version": 4,
+                    "items": [
+                        {
+                            "id": "e911ef4e-433b-412a-bfab-ebb12fc70a09",
+                            "name": "Testserie AMPP: Fotball",
+                            "payload": {
+                                "type": "Live",
+                                "productcode": "MSPO000027/24",
+                                "materialId": "TV7-A",
+                                "timeDetails": {
+                                    "startTime": "2025-06-26T13:15:00.0000000Z",
+                                    "duration": "00:05:00.0000000",
+                                    "timeMode": "Fixed",
+                                    "endTimeMode": "Manual"
+                                },
+                                "materialType": "Program",
+                                "sourceType": "Fabric",
+                                "transitionDetails": {
+                                    "type": "Cut"
+                                },
+                                "liveDetails": {
+                                    "mediaStatus": "Invalid",
+                                    "mediaStatusReason": "WaitingToResolve"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 1,
+                            "items": [
+                                {
+                                    "id": "64e81de9-6fbe-49cc-851d-2ad3ae7de047",
+                                    "name": "NRKTV Sport",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "offset": "00:00:00.0000000",
+                                            "timeMode": "ParentDuration"
+                                        },
+                                        "materialId": "KD7N2G",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                },
+                                {
+                                    "id": "5d9c9cad-09ea-4660-a4ac-aee6f7a1612c",
+                                    "name": "Alle Logo",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "offset": "00:00:02.0000000",
+                                            "timeMode": "ParentDuration"
+                                        },
+                                        "materialId": "E3ZQ2E",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "48d7934d-3def-4487-bd97-23964c3d2568",
+                            "name": "SPO.AMPP Gull | Testserie AMPP: Fotball",
+                            "payload": {
+                                "type": "Video",
+                                "mammediaid": "ab65f60d-e9bf-4c6c-8b3e-1cc459d50fcd",
+                                "carrierid": "TrSpSPO-AMPP-Gull------AA",
+                                "materialId": "TrSpSPO-AMPP-Gull------AA",
+                                "materialType": "Commercial",
+                                "timeDetails": {
+                                    "duration": "00:00:14.2400000",
+                                    "timeMode": "Auto",
+                                    "fluidDuration": false,
+                                    "inPoint": "00:00:00.0000000"
+                                },
+                                "transitionDetails": {
+                                    "type": "Cut"
+                                },
+                                "aggregatedDetails": {
+                                    "duration": "00:00:14.2400000",
+                                    "inPoint": "00:00:00.0000000",
+                                    "outPoint": "00:00:00.0000000"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 2,
+                            "items": [
+                                {
+                                    "id": "dcb5d63d-51a3-4a7b-815c-51a4f8e4c5a0",
+                                    "name": "NRKTV",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "duration": "00:00:14.2400000",
+                                            "offset": "00:00:00.0000000",
+                                            "timeMode": "StartPlus"
+                                        },
+                                        "materialId": "LG8ONE",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "d1ab9603-0528-4d76-8264-d0b822f49f1f",
+                            "name": "Testserie AMPP: Fotball",
+                            "payload": {
+                                "type": "Live",
+                                "productcode": "MSPO000027/24",
+                                "materialId": "TV7-A",
+                                "timeDetails": {
+                                    "duration": "00:20:00.0000000",
+                                    "timeMode": "Auto",
+                                    "endTimeMode": "Manual"
+                                },
+                                "materialType": "Program",
+                                "sourceType": "Fabric",
+                                "transitionDetails": {
+                                    "type": "Cut"
+                                },
+                                "liveDetails": {
+                                    "mediaStatus": "Invalid",
+                                    "mediaStatusReason": "WaitingToResolve"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 1,
+                            "items": [
+                                {
+                                    "id": "9ddfabd1-f27c-496e-ac97-af8f538d83c1",
+                                    "name": "NRKTV Sport",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "offset": "00:00:00.0000000",
+                                            "timeMode": "ParentDuration"
+                                        },
+                                        "materialId": "KD7N2G",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                },
+                                {
+                                    "id": "e7677080-4a21-4364-8f82-800369c01dd0",
+                                    "name": "Alle Logo",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "offset": "00:00:02.0000000",
+                                            "timeMode": "ParentDuration"
+                                        },
+                                        "materialId": "E3ZQ2E",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "d1ca5bd0-8de8-45ce-af18-7eb35f556b3f",
+                            "name": "SPO.AMPP Bronse | Testserie AMPP: Fotball",
+                            "payload": {
+                                "type": "Video",
+                                "mammediaid": "8e1e3325-adaa-4309-889d-2f4974368f74",
+                                "carrierid": "TrSpSPO-AMPP-Bronse----AA",
+                                "materialId": "TrSpSPO-AMPP-Bronse----AA",
+                                "materialType": "Commercial",
+                                "timeDetails": {
+                                    "duration": "00:00:18.0000000",
+                                    "timeMode": "Auto",
+                                    "fluidDuration": false,
+                                    "inPoint": "00:00:00.0000000"
+                                },
+                                "transitionDetails": {
+                                    "type": "Cut"
+                                },
+                                "aggregatedDetails": {
+                                    "duration": "00:00:18.0000000",
+                                    "inPoint": "00:00:00.0000000",
+                                    "outPoint": "00:00:00.0000000"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 2,
+                            "items": [
+                                {
+                                    "id": "ded8443c-9816-4a45-8200-7d1c9acfb721",
+                                    "name": "NRKTV",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "duration": "00:00:18.0000000",
+                                            "offset": "00:00:00.0000000",
+                                            "timeMode": "StartPlus"
+                                        },
+                                        "materialId": "LG8ONE",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "721d6950-cf7e-4f76-af6d-603b584f29c7",
+                            "name": "Testserie AMPP: Fotball",
+                            "payload": {
+                                "type": "Live",
+                                "productcode": "MSPO000027/24",
+                                "materialId": "TV7-A",
+                                "timeDetails": {
+                                    "duration": "00:05:00.0000000",
+                                    "timeMode": "Auto",
+                                    "endTimeMode": "Manual"
+                                },
+                                "materialType": "Program",
+                                "sourceType": "Fabric",
+                                "transitionDetails": {
+                                    "type": "Cut"
+                                },
+                                "liveDetails": {
+                                    "mediaStatus": "Invalid",
+                                    "mediaStatusReason": "WaitingToResolve"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 1,
+                            "items": [
+                                {
+                                    "id": "7cec0906-6d92-4d09-8ed7-5f3004bb9fbc",
+                                    "name": "NRKTV Sport",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "offset": "00:00:00.0000000",
+                                            "timeMode": "ParentDuration"
+                                        },
+                                        "materialId": "KD7N2G",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                },
+                                {
+                                    "id": "c9f2fe59-9bc8-4c7a-84b9-d7b7e72f248b",
+                                    "name": "Alle Logo",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "offset": "00:00:02.0000000",
+                                            "timeMode": "ParentDuration"
+                                        },
+                                        "materialId": "E3ZQ2E",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8a7fcc10-fbe1-4dd0-9b02-d9c41247d173",
+                            "name": "SPO.AMPP Gull | Testserie AMPP: Fotball",
+                            "payload": {
+                                "type": "Video",
+                                "mammediaid": "ab65f60d-e9bf-4c6c-8b3e-1cc459d50fcd",
+                                "carrierid": "TrSpSPO-AMPP-Gull------AA",
+                                "materialId": "TrSpSPO-AMPP-Gull------AA",
+                                "materialType": "Commercial",
+                                "timeDetails": {
+                                    "duration": "00:00:14.2400000",
+                                    "timeMode": "Auto",
+                                    "fluidDuration": false,
+                                    "inPoint": "00:00:00.0000000"
+                                },
+                                "transitionDetails": {
+                                    "type": "Cut"
+                                },
+                                "aggregatedDetails": {
+                                    "duration": "00:00:14.2400000",
+                                    "inPoint": "00:00:00.0000000",
+                                    "outPoint": "00:00:00.0000000"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 2,
+                            "items": [
+                                {
+                                    "id": "88a45916-b3d1-4c02-9d0a-99abfad01fe4",
+                                    "name": "NRKTV",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "duration": "00:00:14.2400000",
+                                            "offset": "00:00:00.0000000",
+                                            "timeMode": "StartPlus"
+                                        },
+                                        "materialId": "LG8ONE",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8ff1f039-ae15-4630-bdc4-596297376ac2",
+                            "name": "Testserie AMPP: Fotball",
+                            "payload": {
+                                "type": "Live",
+                                "productcode": "MSPO000027/24",
+                                "materialId": "TV7-A",
+                                "timeDetails": {
+                                    "duration": "00:20:00.0000000",
+                                    "timeMode": "Auto",
+                                    "endTimeMode": "Manual"
+                                },
+                                "materialType": "Program",
+                                "sourceType": "Fabric",
+                                "transitionDetails": {
+                                    "type": "Cut"
+                                },
+                                "liveDetails": {
+                                    "mediaStatus": "Invalid",
+                                    "mediaStatusReason": "WaitingToResolve"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 1,
+                            "items": [
+                                {
+                                    "id": "4dbf3a62-1d59-43b9-b5b9-4efe7734bdce",
+                                    "name": "Alle Logo",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "offset": "00:00:02.0000000",
+                                            "timeMode": "ParentDuration"
+                                        },
+                                        "materialId": "E3ZQ2E",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                },
+                                {
+                                    "id": "3ab3b8b2-99e6-4861-9440-605e8f922789",
+                                    "name": "NRKTV Sport",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "offset": "00:00:00.0000000",
+                                            "timeMode": "ParentDuration"
+                                        },
+                                        "materialId": "KD7N2G",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "f4489bf7-67d4-4ed7-b6f8-ece7924fdec3",
+                            "name": "SPO.AMPP Bronse | Testserie AMPP: Fotball",
+                            "payload": {
+                                "type": "Video",
+                                "mammediaid": "8e1e3325-adaa-4309-889d-2f4974368f74",
+                                "carrierid": "TrSpSPO-AMPP-Bronse----AA",
+                                "materialId": "TrSpSPO-AMPP-Bronse----AA",
+                                "materialType": "Commercial",
+                                "timeDetails": {
+                                    "duration": "00:00:18.0000000",
+                                    "timeMode": "Auto",
+                                    "fluidDuration": false,
+                                    "inPoint": "00:00:00.0000000"
+                                },
+                                "transitionDetails": {
+                                    "type": "Cut"
+                                },
+                                "aggregatedDetails": {
+                                    "duration": "00:00:18.0000000",
+                                    "inPoint": "00:00:00.0000000",
+                                    "outPoint": "00:00:00.0000000"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 2,
+                            "items": [
+                                {
+                                    "id": "fe82c454-926a-4ca2-9fec-b4a5cc0904f6",
+                                    "name": "NRKTV",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "duration": "00:00:18.0000000",
+                                            "offset": "00:00:00.0000000",
+                                            "timeMode": "StartPlus"
+                                        },
+                                        "materialId": "LG8ONE",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ab361c46-d636-4fe5-a7eb-6f14b6677790",
+                            "name": "Testserie AMPP: Fotball",
+                            "payload": {
+                                "type": "Live",
+                                "productcode": "MSPO000027/24",
+                                "materialId": "TV7-A",
+                                "timeDetails": {
+                                    "duration": "00:10:00.0000000",
+                                    "timeMode": "Auto",
+                                    "endTimeMode": "Manual"
+                                },
+                                "materialType": "Program",
+                                "sourceType": "Fabric",
+                                "transitionDetails": {
+                                    "type": "Cut"
+                                },
+                                "liveDetails": {
+                                    "mediaStatus": "Invalid",
+                                    "mediaStatusReason": "WaitingToResolve"
+                                }
+                            },
+                            "alternatives": [],
+                            "recorderStates": [],
+                            "version": 1,
+                            "items": [
+                                {
+                                    "id": "03ce21b3-10fa-4f9e-8186-f57580a456db",
+                                    "name": "NRKTV Sport",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "offset": "00:00:00.0000000",
+                                            "timeMode": "ParentDuration"
+                                        },
+                                        "materialId": "KD7N2G",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                },
+                                {
+                                    "id": "bcdf6267-369e-49b5-9c3b-c7420aa63444",
+                                    "name": "Alle Logo",
+                                    "payload": {
+                                        "type": "Logo",
+                                        "timeDetails": {
+                                            "offset": "00:00:02.0000000",
+                                            "timeMode": "ParentDuration"
+                                        },
+                                        "materialId": "E3ZQ2E",
+                                        "layer": 6,
+                                        "inTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        },
+                                        "outTransitionDetails": {
+                                            "type": "Fade",
+                                            "duration": "00:00:00.2600000"
+                                        }
+                                    },
+                                    "alternatives": [],
+                                    "recorderStates": [],
+                                    "version": 1,
+                                    "items": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "sync-note-id-new",
+                    "name": "SYNC NOTE",
+                    "payload": {
+                        "type": "Note",
+                        "materialId": "SYNC NOTE",
+                        "notes": "🔽 Alt nedenfor synkroniseres fra PRF / alt ovenfor (180 minutter) kan endres 🔼",
+                        "timeDetails": {
+                            "timeMode": "Auto"
+                        },
+                        "transitionDetails": {
+                            "type": "Cut"
+                        }
+                    },
+                    "alternatives": [],
+                    "recorderStates": [],
+                    "version": 1,
+                    "items": []
+                }
+            ]
+        },
+        {
+            "id": "29ef2917-a180-456a-adfa-4b27846dd1a8",
+            "name": "Sendedøgn 30-06-2025",
+            "payload": {
+                "type": "Container",
+                "timeDetails": {
+                    "startTime": "2025-06-30T04:00:00.0000000Z",
+                    "duration": "24:00:00.0000000",
+                    "timeMode": "ManualNominalStart"
+                }
+            },
+            "alternatives": [],
+            "recorderStates": [],
+            "version": 2,
+            "items": [
+                {
+                    "id": "4f06ec02-cf93-4867-9f6b-e02f1f68ccdf",
+                    "name": "Nora-plakat TV nrktv7 | Injected",
+                    "payload": {
+                        "type": "Live",
+                        "productcode": "",
+                        "materialId": "TV7-PLAKAT",
+                        "timeDetails": {
+                            "startTime": "2025-06-30T04:00:00.0000000Z",
+                            "duration": "01:00:00.0000000",
+                            "timeMode": "Fixed",
+                            "endTimeMode": "Manual"
+                        },
+                        "materialType": "Live",
+                        "sourceType": "Fabric",
+                        "transitionDetails": {
+                            "type": "Cut"
+                        },
+                        "liveDetails": {
+                            "mediaStatus": "Invalid",
+                            "mediaStatusReason": "WaitingToResolve"
+                        }
+                    },
+                    "alternatives": [],
+                    "recorderStates": [],
+                    "version": 1,
+                    "items": []
+                }
+            ]
+        }
+    ]
+}
