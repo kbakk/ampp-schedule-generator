@@ -79,19 +79,31 @@ class ScheduleGenerator:
             name=self._schedule_name,
             container_items=[
                 self._plakat_with_logo("GFX Fullscreen 1"),
-                self._build_show_wrapper(
-                    name="GFX Fullscreen 2 - rec",
-                    items=[self._plakat_with_logo("GFX Fullscreen 2")],
-                    record_part="01-gfx",
+                self._plakat_with_logo("GFX Fullscreen 2"),
+                models.FlexibleItem(
+                    id=_get_rand_id(),
+                    name="SDI Input",
+                    payload=models.FlexiblePayload(
+                        type="Live",
+                        materialType="Live",
+                        materialId="NRK1ABIT",
+                        sourceType="SDI",
+                        timeDetails=models.TimeDetailsSimple(
+                            duration="00:00:20.0000000",
+                            timeMode="Auto",
+                            endTimeMode="Manual",
+                        ),
+                        transitionDetails=models.TransitionDetails(type="Cut"),
+                        liveDetails=models.LiveDetails(
+                            mediaStatus="Invalid", mediaStatusReason="WaitingToResolve"
+                        ),
+                    ),
+                    alternatives=[],
+                    recorderStates=[],
+                    version=1,
+                    items=[],
                 ),
-                self._build_show_wrapper(
-                    name="GFX Fullscreen 3 - rec",
-                    items=[self._plakat_with_logo("GFX Fullscreen 3")],
-                    record_part="02-gfx",
-                ),
-                self._build_testserie_show(record_part="03-match"),
-                self._build_sync_note(),
-                self._plakat_with_logo("GFX Fullscreen 4"),
+                self._plakat_with_logo("GFX Fullscreen 2"),
             ],
         )
 
@@ -108,7 +120,7 @@ class ScheduleGenerator:
             id=_get_rand_id(),
             name=name,
             payload=models.FlexiblePayload(
-                type="Container",
+                type="Show",
                 timeDetails=models.TimeDetailsNotional(
                     duration="24:00:00.0000000",
                     timeMode="Auto",
@@ -166,7 +178,7 @@ class ScheduleGenerator:
             alternatives=[],
             recorderStates=[],
             version=1,
-            items=[logo_item],
+            items=[],
         )
 
     def _build_show_wrapper(
